@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Acting Masterclass: 8-Lesson Curriculum">
+    <meta property="og:description" content="Complete acting curriculum for aspiring actors with techniques, exercises and assignments">
+    <meta property="og:image" content="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=acting%20class%20with%20students%20and%20teacher&w=1200&h=630&style=professional">
+    <meta property="og:type" content="website">
+    <title>Acting Masterclass: 8-Lesson Curriculum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/chat/cdn/animate.min.css" rel="stylesheet">
+    <script src="/chat/cdn/papaparse.min.js"></script>
+    <link href="/chat/cdn/all.min.css" rel="stylesheet">
+    <script src="/chat/cdn/all.min.js" crossorigin></script>
+    <link rel="icon" href="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=acting%20drama%20masks%20icon&w=64&h=64&transparent=true" type="image/png">
+    <style>
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-path: '/chat/webfonts/fa-regular-400';
+            src: url('/chat/webfonts/fa-regular-400.woff2') format('woff2'),
+                url('/chat/webfonts/fa-regular-400.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Font Awesome 6 Free';
+            font-path: '/chat/webfonts/fa-solid-900';
+            src: url('/chat/webfonts/fa-solid-900.woff2') format('woff2'),
+                url('/chat/webfonts/fa-solid-900.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Font Awesome 6 Brands';
+            font-path: '/chat/webfonts/fa-brands-400';
+            src: url('/chat/webfonts/fa-brands-400.woff2') format('woff2'),
+                url('/chat/webfonts/fa-brands-400.ttf') format('truetype');
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .lesson-content {
+                padding: 20px !important;
+            }
+        }
+        
+        .student-response {
+            border: 1px dashed #94a3b8;
+            padding: 10px;
+            min-height: 150px;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-indigo-900 text-white shadow-lg sticky top-0 z-50 no-print">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=acting%20drama%20masks%20icon&w=40&h=40&transparent=true" alt="Logo" class="h-10 w-10 mr-3">
+                <h1 class="text-xl font-bold">Acting Masterclass</h1>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#overview" class="hover:text-indigo-200 transition-colors">Overview</a>
+                <div class="relative group">
+                    <button class="hover:text-indigo-200 transition-colors flex items-center">
+                        Lessons <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white text-gray-800 shadow-xl rounded-md py-2 z-10 hidden group-hover:block">
+                        <a href="#lesson1" class="block px-4 py-2 hover:bg-indigo-100">Lesson 1: Acting Fundamentals</a>
+                        <a href="#lesson2" class="block px-4 py-2 hover:bg-indigo-100">Lesson 2: Script Analysis</a>
+                        <a href="#lesson3" class="block px-4 py-2 hover:bg-indigo-100">Lesson 3: Memorization</a>
+                        <a href="#lesson4" class="block px-4 py-2 hover:bg-indigo-100">Lesson 4: Movement</a>
+                        <a href="#lesson5" class="block px-4 py-2 hover:bg-indigo-100">Lesson 5: Voice</a>
+                        <a href="#lesson6" class="block px-4 py-2 hover:bg-indigo-100">Lesson 6: Auditioning</a>
+                        <a href="#lesson7" class="block px-4 py-2 hover:bg-indigo-100">Lesson 7: Business</a>
+                        <a href="#lesson8" class="block px-4 py-2 hover:bg-indigo-100">Lesson 8: Career Path</a>
+                    </div>
+                </div>
+                <a href="#resources" class="hover:text-indigo-200 transition-colors">Resources</a>
+                <a href="#about" class="hover:text-indigo-200 transition-colors">About</a>
+            </div>
+            <button id="mobileMenuButton" class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-4 py-3 bg-indigo-800">
+            <a href="#overview" class="block py-2 hover:text-indigo-200">Overview</a>
+            <button id="mobileLessonsButton" class="w-full text-left py-2 hover:text-indigo-200 flex justify-between items-center">
+                Lessons <i class="fas fa-chevron-down ml-1 text-xs"></i>
+            </button>
+            <div id="mobileLessonsMenu" class="hidden pl-4 py-2">
+                <a href="#lesson1" class="block py-2 hover:text-indigo-200">Lesson 1: Acting Fundamentals</a>
+                <a href="#lesson2" class="block py-2 hover:text-indigo-200">Lesson 2: Script Analysis</a>
+                <a href="#lesson3" class="block py-2 hover:text-indigo-200">Lesson 3: Memorization</a>
+                <a href="#lesson4" class="block py-2 hover:text-indigo-200">Lesson 4: Movement</a>
+                <a href="#lesson5" class="block py-2 hover:text-indigo-200">Lesson 5: Voice</a>
+                <a href="#lesson6" class="block py-2 hover:text-indigo-200">Lesson 6: Auditioning</a>
+                <a href="#lesson7" class="block py-2 hover:text-indigo-200">Lesson 7: Business</a>
+                <a href="#lesson8" class="block py-2 hover:text-indigo-200">Lesson 8: Career Path</a>
+            </div>
+            <a href="#resources" class="block py-2 hover:text-indigo-200">Resources</a>
+            <a href="#about" class="block py-2 hover:text-indigo-200">About</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-indigo-900 to-purple-800 text-white py-16 md:py-24 no-print">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Master the Craft of Acting</h1>
+                <p class="text-xl mb-6">An 8-lesson curriculum designed to help aspiring actors develop essential skills and break into the industry</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#lesson1" class="bg-white text-indigo-900 px-6 py-3 rounded-full font-bold hover:bg-indigo-100 transition-colors">Start Learning</a>
+                    <button id="printAllBtn" class="bg-transparent border-2 border-white px-6 py-3 rounded-full font-bold hover:bg-white hover:text-indigo-900 transition-colors">Print All Lessons</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=diverse%20group%20of%20actors%20rehearsing%20on%20stage&w=600&h=400&style=professional" alt="Acting Students" class="rounded-lg shadow-2xl max-w-full h-auto">
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Complete Acting Curriculum</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Lesson Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20looking%20in%20mirror%20practicing%20expressions&w=400&h=225&style=professional" alt="Acting Fundamentals" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 1: Acting Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Discover the core principles of acting and find your authentic self as a performer.</p>
+                        <a href="#lesson1" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20analyzing%20script%20with%20highlighter&w=400&h=225&style=professional" alt="Script Analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 2: Script Analysis</h3>
+                        <p class="text-gray-600 mb-4">Learn to break down scripts effectively and develop compelling characters.</p>
+                        <a href="#lesson2" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20memorizing%20lines%20script%20techniques&w=400&h=225&style=professional" alt="Memorization Techniques" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 3: Memorization</h3>
+                        <p class="text-gray-600 mb-4">Master effective techniques for memorizing lines quickly and reliably.</p>
+                        <a href="#lesson3" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actors%20doing%20physical%20movement%20exercise&w=400&h=225&style=professional" alt="Physical Acting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 4: Movement</h3>
+                        <p class="text-gray-600 mb-4">Discover how to use your body effectively to create compelling characters.</p>
+                        <a href="#lesson4" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20doing%20vocal%20training%20exercise&w=400&h=225&style=professional" alt="Vocal Techniques" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 5: Voice</h3>
+                        <p class="text-gray-600 mb-4">Develop your vocal instrument to create range, clarity and character.</p>
+                        <a href="#lesson5" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20in%20audition%20room%20with%20casting%20director&w=400&h=225&style=professional" alt="Auditioning" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 6: Auditioning</h3>
+                        <p class="text-gray-600 mb-4">Master the art of auditioning and learn to present your best self to casting directors.</p>
+                        <a href="#lesson6" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20creating%20professional%20headshot%20resume&w=400&h=225&style=professional" alt="Business of Acting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 7: Business</h3>
+                        <p class="text-gray-600 mb-4">Navigate the business side of acting with headshots, resumes, and industry relationships.</p>
+                        <a href="#lesson7" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lesson Card 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-xl transition-shadow">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=actor%20planning%20career%20path%20with%20goals&w=400&h=225&style=professional" alt="Career Path" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Lesson 8: Career Path</h3>
+                        <p class="text-gray-600 mb-4">Chart your course in the acting industry and create opportunities for yourself.</p>
+                        <a href="#lesson8" class="text-indigo-600 font-semibold hover:text-indigo-800 flex items-center">
+                            View Lesson <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lesson Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="mb-8 flex justify-end no-print">
+            <button id="saveProgressBtn" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors flex items-center">
+                <i class="fas fa-save mr-2"></i> Save Progress
+            </button>
+        </div>
+
+        <!-- Lesson 1 -->
+        <section id="lesson1" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 1: Acting Fundamentals & Finding Your Authentic Self</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="1">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Introduction to Acting</h3>
+                    <p class="mb-4">Acting is more than pretending—it's about finding truth in imaginary circumstances. This lesson introduces you to the foundational principles that all great actors understand.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Core Concepts:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Acting is revealing truth through character</li>
+                        <li>The importance of observation and empathy</li>
+                        <li>Stanislavski's system and "emotional memory"</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">The Actor's Toolbox:</h3>
+                    <p class="mb-6">Your primary tools as an actor are your body, voice, imagination, and emotional life. Strong actors develop all four areas.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://archive.org/details/in.ernet.dli.2015.149465" target="_blank" class="text-indigo-600 hover:text-indigo-800">An Actor Prepares by Constantin Stanislavski</a> (Summary sections)</li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=zrpNBpmVQhQ" target="_blank" class="text-indigo-600 hover:text-indigo-800">"What is Method Acting?" by The National Theatre</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Exercise: The Mirror</h3>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li>Find a mirror and observe yourself closely</li>
+                        <li>Create three different emotional states (joy, anger, sadness)</li>
+                        <li>Note the subtle changes in your face, posture, and breathing</li>
+                        <li>Journal about how these emotions felt physically in your body</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Create a "Character Observation Journal" where you'll document interesting behaviors, speech patterns, and physical traits you observe in people throughout the week. Choose one person to study in depth, noting their unique mannerisms, voice qualities, and movement patterns.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a one-page "Character Observation Report" on someone you've observed this week. Include:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>3 unique physical traits or mannerisms</li>
+                            <li>3 vocal characteristics (pace, pitch, vocabulary choices, etc.)</li>
+                            <li>2 emotional states you witnessed and how they manifested physically</li>
+                            <li>1 paragraph on how you might incorporate these observations into a future character</li>
+                        </ul>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="1" data-assignment="character-observation">
+                            [Type your Character Observation Report here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 2 -->
+        <section id="lesson2" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 2: Script Analysis & Character Development</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="2">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Understanding the Text</h3>
+                    <p class="mb-4">The script is your roadmap. Learning to analyze it properly unlocks the keys to creating compelling performances.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Breaking Down a Script:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Identifying objectives (What does your character want?)</li>
+                        <li>Recognizing obstacles (What stands in their way?)</li>
+                        <li>Finding tactics (How do they try to get what they want?)</li>
+                        <li>Marking beats (When do tactics or emotions change?)</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">The Given Circumstances:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Time period and location</li>
+                        <li>Relationships between characters</li>
+                        <li>Events preceding the scene</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.goodreads.com/book/show/166207.A_Practical_Handbook_for_the_Actor" target="_blank" class="text-indigo-600 hover:text-indigo-800">A Practical Handbook for the Actor</a> (Selected excerpts)</li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=QftpLoUqrXE" target="_blank" class="text-indigo-600 hover:text-indigo-800">"How Actors Create Characters" with BAFTA</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Script Analysis Worksheet:</h3>
+                    <div class="bg-gray-50 p-6 border border-gray-200 rounded-md mb-6">
+                        <ol class="list-decimal pl-6">
+                            <li>Character name: __________________</li>
+                            <li>Primary objective (super-objective): __________________</li>
+                            <li>Scene objective: __________________</li>
+                            <li>Obstacles: __________________</li>
+                            <li>Tactics/actions: __________________</li>
+                            <li>Character relationships: __________________</li>
+                            <li>Important given circumstances: __________________</li>
+                        </ol>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Select a monologue (2-3 minutes) from <a href="https://www.backstage.com/monologues/" target="_blank" class="text-indigo-600 hover:text-indigo-800">this free monologue database</a> and complete a full character analysis using the worksheet above. Then record yourself performing the monologue twice—once before your analysis and once after—and note the differences in your performance.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a completed Script Analysis Worksheet for your chosen monologue, along with a 1-2 paragraph reflection addressing:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>How your understanding of the character changed through this analysis</li>
+                            <li>How this analysis affected your performance choices</li>
+                            <li>One specific discovery about the character that wasn't obvious at first reading</li>
+                        </ul>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="2" data-assignment="script-analysis">
+                            [Complete your Script Analysis Worksheet and reflection here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 3 -->
+        <section id="lesson3" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 3: Memorization Techniques for Actors</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="3">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">The Science of Memory</h3>
+                    <p class="mb-4">Memorizing lines is a fundamental actor skill. Understanding how memory works can make this process more efficient and effective.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">How Memory Works:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Short-term vs. long-term memory</li>
+                        <li>The role of repetition and association</li>
+                        <li>Physical movement and memory retention</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Effective Memorization Techniques:</h3>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li><strong>Chunking Method</strong>: Break text into small, manageable sections</li>
+                        <li><strong>Recording & Playback</strong>: Record yourself reading the lines, then listen repeatedly</li>
+                        <li><strong>Physical Anchoring</strong>: Associate specific movements with lines</li>
+                        <li><strong>The Memory Palace</strong>: Visualize locations to "store" different parts of the text</li>
+                        <li><strong>Backward Building</strong>: Start with the last line, then add the previous line, and so on</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.goodreads.com/book/show/6346975-moonwalking-with-einstein" target="_blank" class="text-indigo-600 hover:text-indigo-800">Moonwalking with Einstein by Joshua Foer</a> (Memory technique excerpts)</li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=KRvc9sRvYYY" target="_blank" class="text-indigo-600 hover:text-indigo-800">"Memory Techniques for Actors" with Jim Carrey</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Memory Experiment:</h3>
+                    <p class="mb-6">Choose a short poem or paragraph (10-15 lines). Set a timer for 15 minutes. Use one of the techniques above to memorize it. Test yourself by writing it down from memory.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Select a one-page scene or monologue and create a personalized memorization plan using at least three different techniques from this lesson. Document your process, noting which methods work best for you. Set a goal to be completely off-book within three days, recording your progress each day.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a "Memorization Method Report" that includes:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>The text you chose to memorize (attach a copy)</li>
+                            <li>The 3 memorization techniques you applied</li>
+                            <li>A brief tracker showing your daily progress</li>
+                            <li>A short evaluation (200 words max) of which technique worked best for you and why</li>
+                            <li>One tip you would offer to another actor struggling with memorization</li>
+                        </ul>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="3" data-assignment="memorization-report">
+                            [Complete your Memorization Method Report here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 4 -->
+        <section id="lesson4" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 4: Physical Acting & Movement</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="4">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Your Body as an Instrument</h3>
+                    <p class="mb-4">Physical expression is as important as vocal delivery. This lesson explores how to communicate character through posture, gesture, and movement.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Physical Awareness:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Body alignment and posture</li>
+                        <li>Tension and release</li>
+                        <li>Character physicality and habitual gestures</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Movement Techniques:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Laban Movement Analysis (eight basic efforts)</li>
+                        <li>Animal studies and character movement</li>
+                        <li>Status expression through physicality</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.amazon.com/Viewpoints-Book-Practical-Composition-Performance/dp/1559362413" target="_blank" class="text-indigo-600 hover:text-indigo-800">The Viewpoints Book by Anne Bogart</a> (Selected principles)</li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=gUqZPfGIX6U" target="_blank" class="text-indigo-600 hover:text-indigo-800">"Physical Theater Exercises" by Frantic Assembly</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Physical Character Development:</h3>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li>Choose a character type (elderly person, child, someone with high/low status)</li>
+                        <li>Explore how they might:
+                            <ul class="list-disc pl-6 mt-2">
+                                <li>Sit in a chair and stand up</li>
+                                <li>Walk across a room</li>
+                                <li>Reach for something on a high shelf</li>
+                                <li>React to being startled</li>
+                            </ul>
+                        </li>
+                        <li>Document how the physicality affects your emotional state</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Create three distinct character walks based on different physical characteristics (e.g., someone with a knee injury, someone extremely confident, someone nervous). Practice these walks for at least 5 minutes each day for a week.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a 1-2 minute video titled "Physical Transformation" showing you transitioning between three distinct characters using ONLY physical changes (no dialogue). Include a brief written description (100-150 words) for each character explaining:</p>
+                        <ul class="list-disc pl-6 mb-4">
+                            <li>The physical choices you made and why</li>
+                            <li>How these physical choices affected your emotional state</li>
+                            <li>One discovery you made while embodying this character physically</li>
+                        </ul>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="4" data-assignment="physical-transformation">
+                            [Include your video link and character descriptions here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 5 -->
+        <section id="lesson5" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 5: Vocal Techniques for Actors</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="5">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Finding Your Voice</h3>
+                    <p class="mb-4">Your voice is a powerful tool for creating character and conveying emotion. This lesson covers vocal techniques to improve range, clarity, and expressiveness.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Vocal Health:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Proper breathing techniques</li>
+                        <li>Vocal warm-ups and cool-downs</li>
+                        <li>Protecting your voice during intense performances</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Voice Development:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Articulation and diction exercises</li>
+                        <li>Projection without strain</li>
+                        <li>Modulating pitch, pace, and tone</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Accent and Dialect Work:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Introduction to the International Phonetic Alphabet (IPA)</li>
+                        <li>Resources for accent study</li>
+                        <li>Common pitfalls in accent work</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.amazon.com/Voice-Actor-Cicely-Berry/dp/0020415559" target="_blank" class="text-indigo-600 hover:text-indigo-800">Voice and the Actor by Cicely Berry</a></li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=Tc-_hoG4nec" target="_blank" class="text-indigo-600 hover:text-indigo-800">"Voice Training: Daily Vocal Warm-Up" with RADA</a></li>
+                        <li>Accent Resource: <a href="https://www.dialectsarchive.com/" target="_blank" class="text-indigo-600 hover:text-indigo-800">IDEA (International Dialects of English Archive)</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Voice Exploration Exercise:</h3>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li>Record yourself reading a short paragraph in your natural voice</li>
+                        <li>Re-record the same paragraph exploring these variations:
+                            <ul class="list-disc pl-6 mt-2">
+                                <li>Change the pitch (higher/lower)</li>
+                                <li>Alter the pace (faster/slower)</li>
+                                <li>Shift the placement (nasal, chest voice, head voice)</li>
+                                <li>Add a simple accent or speech pattern</li>
+                            </ul>
+                        </li>
+                        <li>Note how each change affects the character and emotion being conveyed</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Create a personalized 10-minute daily vocal warm-up routine drawing from the exercises in this lesson. Practice it consistently for two weeks.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a "Vocal Character Profile" including:</p>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li>A written description (200 words) of your personal vocal warm-up routine</li>
+                            <li>An audio recording (30-60 seconds) of you performing the same text in two contrasting vocal characterizations</li>
+                            <li>A brief explanation (100 words) of the specific vocal choices you made for each character (pitch, pace, placement, accent, etc.) and how these choices reflect character traits</li>
+                        </ol>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="5" data-assignment="vocal-character">
+                            [Include your warm-up routine description, audio link, and vocal choices explanation here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 6 -->
+        <section id="lesson6" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 6: Auditioning: Preparation & Execution</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="6">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">The Art of the Audition</h3>
+                    <p class="mb-4">Auditioning is a skill in itself. This lesson prepares you for different audition formats and helps you present your best self to casting directors.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Types of Auditions:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>In-person vs. self-tape auditions</li>
+                        <li>Cold readings vs. prepared pieces</li>
+                        <li>Callbacks and chemistry reads</li>
+                        <li>Musical auditions (if applicable)</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Audition Preparation:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Research the project, character, and creative team</li>
+                        <li>Material selection and preparation</li>
+                        <li>The "slate" (introducing yourself)</li>
+                        <li>Managing audition anxiety</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Self-Tape Essentials:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Technical requirements (lighting, sound, framing)</li>
+                        <li>Best practices for recording</li>
+                        <li>Submitting professional quality videos</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.amazon.com/Audition-Everything-Actor-Needs-Audition/dp/0553272950" target="_blank" class="text-indigo-600 hover:text-indigo-800">Audition by Michael Shurtleff</a> (Key chapters)</li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=E7SXKxpUgxs" target="_blank" class="text-indigo-600 hover:text-indigo-800">"Self Tape Audition Tips" by Casting Networks</a></li>
+                        <li><a href="https://www.backstage.com/magazine/article/elements-perfect-self-tape-audition-5264/" target="_blank" class="text-indigo-600 hover:text-indigo-800">Backstage's Self-Tape Checklist</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Mock Audition Preparation:</h3>
+                    <p class="mb-4">Choose an age-appropriate monologue that showcases your strengths and complete this prep checklist:</p>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li>Character analysis (who am I, what do I want?)</li>
+                        <li>Emotional preparation (what state am I in?)</li>
+                        <li>Physical/vocal warm-up plan</li>
+                        <li>Entrance/exit strategy</li>
+                        <li>Potential adjustments if asked to change the performance</li>
+                    </ol>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Create a complete self-tape audition following professional standards.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a "Professional Self-Tape Audition" including:</p>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li>A video recording that includes:
+                                <ul class="list-disc pl-6 mt-2">
+                                    <li>A professional slate (name, height, agency if applicable)</li>
+                                    <li>A 1-2 minute monologue appropriate for your age and type</li>
+                                    <li>Professional framing, lighting, and sound quality</li>
+                                </ul>
+                            </li>
+                            <li>A written "Audition Preparation Sheet" (one page) explaining:
+                                <ul class="list-disc pl-6 mt-2">
+                                    <li>Why you chose this particular monologue</li>
+                                    <li>Your character analysis (3-4 bullet points)</li>
+                                    <li>One adjustment you would make if a casting director asked you to perform it differently</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="6" data-assignment="self-tape">
+                            [Include your video link and Audition Preparation Sheet here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 7 -->
+        <section id="lesson7" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 7: The Business of Acting</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="7">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Acting as a Profession</h3>
+                    <p class="mb-4">Understanding the business side of acting is essential for building a sustainable career. This lesson covers the practical aspects of entering the industry.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Acting Resume & Headshots:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Creating an industry-standard resume</li>
+                        <li>Headshot requirements and recommendations</li>
+                        <li>Building credits strategically</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Digital Presence:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Actor websites and social media</li>
+                        <li>Demo reels and content creation</li>
+                        <li>Online casting platforms</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Industry Relationships:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Finding the right agent or manager</li>
+                        <li>Working with casting directors</li>
+                        <li>Networking effectively and appropriately</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.amazon.com/Self-Management-Actors-Getting-Business-Fourth/dp/0972301933" target="_blank" class="text-indigo-600 hover:text-indigo-800">Self-Management for Actors by Bonnie Gillespie</a></li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=mNQoE5xwXjU" target="_blank" class="text-indigo-600 hover:text-indigo-800">"What Casting Directors Look For" - Lisa London</a></li>
+                        <li><a href="https://www.actorsaccess.com/" target="_blank" class="text-indigo-600 hover:text-indigo-800">Actors Access</a> & <a href="https://www.backstage.com/" target="_blank" class="text-indigo-600 hover:text-indigo-800">Backstage</a> (casting sites)</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Resume Workshop:</h3>
+                    <p class="mb-4">Create or update your acting resume following industry standards:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Name and contact information (or agent contact)</li>
+                        <li>Physical characteristics (height, weight, eye color, hair color)</li>
+                        <li>Training and education</li>
+                        <li>Performance experience (categorized by medium)</li>
+                        <li>Special skills</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Create your professional acting portfolio starter kit.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit your "Acting Business Package" which includes:</p>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li>A professionally formatted acting resume (using industry templates)</li>
+                            <li>A one-page "Actor Marketing Plan" outlining:
+                                <ul class="list-disc pl-6 mt-2">
+                                    <li>Your target market (types of roles, mediums, etc.)</li>
+                                    <li>Three specific steps you'll take in the next month to advance your career</li>
+                                    <li>A budget plan for professional materials (headshots, website, etc.)</li>
+                                    <li>One local networking opportunity you plan to pursue</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="7" data-assignment="business-package">
+                            [Include your acting resume and Actor Marketing Plan here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson 8 -->
+        <section id="lesson8" class="page-break mb-16">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <div class="bg-indigo-900 p-6 flex justify-between items-center">
+                    <h2 class="text-2xl font-bold text-white">Lesson 8: Building Your Acting Career Path</h2>
+                    <button class="print-btn bg-white text-indigo-900 px-3 py-1 rounded-md font-medium text-sm no-print hover:bg-indigo-100 transition-colors" data-lesson="8">
+                        <i class="fas fa-print mr-1"></i> Print Lesson
+                    </button>
+                </div>
+                <div class="lesson-content p-8">
+                    <h3 class="text-xl font-bold mb-4">Charting Your Course</h3>
+                    <p class="mb-4">The acting industry offers many different paths. This lesson helps you identify your specific goals and create a roadmap for achieving them.</p>
+                    
+                    <h3 class="text-xl font-bold mb-4">Different Acting Paths:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Theater (community, regional, Broadway)</li>
+                        <li>Film and television</li>
+                        <li>Commercials and voice-over work</li>
+                        <li>New media (web series, gaming, motion capture)</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Training and Development:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Acting classes and coaches</li>
+                        <li>Degree programs vs. conservatory training</li>
+                        <li>Workshops and masterclasses</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Creating Your Own Opportunities:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Self-producing content</li>
+                        <li>Collaborative projects</li>
+                        <li>Building a creative community</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Recommended Reading/Viewing:</h3>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li><a href="https://www.amazon.com/Actors-Business-Survive-Thrive-Performing/dp/1575259559" target="_blank" class="text-indigo-600 hover:text-indigo-800">An Actor's Business by Andrew Reilly</a></li>
+                        <li>Watch: <a href="https://www.youtube.com/watch?v=xTaoBUoHOQQ" target="_blank" class="text-indigo-600 hover:text-indigo-800">"Creating Your Own Work" with Issa Rae</a></li>
+                        <li><a href="https://nofilmschool.com/how-to-make-a-web-series" target="_blank" class="text-indigo-600 hover:text-indigo-800">No Film School - How to Create Your Own Web Series</a></li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Career Planning Exercise:</h3>
+                    <p class="mb-4">Create a tiered goal-setting plan:</p>
+                    <ol class="list-decimal pl-6 mb-6">
+                        <li>Short-term goals (next 3-6 months)</li>
+                        <li>Mid-range goals (6-18 months)</li>
+                        <li>Long-term goals (2-5 years)</li>
+                        <li>Dream scenarios (5+ years)</li>
+                    </ol>
+                    
+                    <p class="mb-4">For each goal, identify:</p>
+                    <ul class="list-disc pl-6 mb-6">
+                        <li>Specific actions needed to achieve it</li>
+                        <li>Resources required (time, money, connections)</li>
+                        <li>Potential obstacles and solutions</li>
+                        <li>How you'll measure success</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-4">Actionable Takeaway:</h3>
+                    <p class="mb-6">Design and initiate a 90-day acting challenge for yourself.</p>
+                    
+                    <div class="border-t-2 border-gray-200 pt-6 mt-8">
+                        <h3 class="text-xl font-bold mb-4">Final Assignment:</h3>
+                        <p class="mb-4">Submit a "Personal Acting Career Roadmap" that includes:</p>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li>A clear statement of your acting goals (short, medium, and long-term)</li>
+                            <li>An assessment of your current strengths and areas for development as an actor</li>
+                            <li>A detailed 30-day plan with specific daily or weekly actions you commit to taking</li>
+                            <li>A list of resources (classes, contacts, websites, books) you plan to utilize</li>
+                            <li>One "stretch goal" that pushes you beyond your comfort zone</li>
+                            <li>A method for tracking your progress and accountability</li>
+                        </ol>
+                        
+                        <div class="student-response mt-4" contenteditable="true" data-lesson="8" data-assignment="career-roadmap">
+                            [Create your Personal Acting Career Roadmap here]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-16 bg-gray-100 no-print">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Additional Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Books Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-book text-indigo-600 mr-3"></i> Recommended Books
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">An Actor Prepares</p>
+                                <p class="text-sm text-gray-600">Constantin Stanislavski</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Respect for Acting</p>
+                                <p class="text-sm text-gray-600">Uta Hagen</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">The Intent to Live</p>
+                                <p class="text-sm text-gray-600">Larry Moss</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Audition</p>
+                                <p class="text-sm text-gray-600">Michael Shurtleff</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">The Actor's Life: A Survival Guide</p>
+                                <p class="text-sm text-gray-600">Jenna Fischer</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Websites Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-globe text-indigo-600 mr-3"></i> Useful Websites
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Backstage</p>
+                                <p class="text-sm text-gray-600">Casting calls and industry news</p>
+                                <a href="https://www.backstage.com" target="_blank" class="text-indigo-600 text-sm">www.backstage.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Actors Access</p>
+                                <p class="text-sm text-gray-600">Casting platform for film/TV</p>
+                                <a href="https://www.actorsaccess.com" target="_blank" class="text-indigo-600 text-sm">www.actorsaccess.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Playbill</p>
+                                <p class="text-sm text-gray-600">Theater news and casting</p>
+                                <a href="https://www.playbill.com" target="_blank" class="text-indigo-600 text-sm">www.playbill.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">IDEA Dialect Archive</p>
+                                <p class="text-sm text-gray-600">Accent and dialect resources</p>
+                                <a href="https://www.dialectsarchive.com" target="_blank" class="text-indigo-600 text-sm">www.dialectsarchive.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">SAG-AFTRA</p>
+                                <p class="text-sm text-gray-600">Actor's union information</p>
+                                <a href="https://www.sagaftra.org" target="_blank" class="text-indigo-600 text-sm">www.sagaftra.org</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Videos Column -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-video text-indigo-600 mr-3"></i> Video Resources
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">National Theatre YouTube</p>
+                                <p class="text-sm text-gray-600">Acting technique videos</p>
+                                <a href="https://www.youtube.com/user/NationalTheatre" target="_blank" class="text-indigo-600 text-sm">View Channel</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">BAFTA Guru</p>
+                                <p class="text-sm text-gray-600">Interviews with established actors</p>
+                                <a href="https://www.youtube.com/user/BAFTAGuru" target="_blank" class="text-indigo-600 text-sm">View Channel</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Actors on Acting</p>
+                                <p class="text-sm text-gray-600">SAG-AFTRA Foundation interviews</p>
+                                <a href="https://www.youtube.com/sagaftra" target="_blank" class="text-indigo-600 text-sm">View Channel</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Vocal Warm-ups</p>
+                                <p class="text-sm text-gray-600">RADA exercises</p>
+                                <a href="https://www.youtube.com/watch?v=Tc-_hoG4nec" target="_blank" class="text-indigo-600 text-sm">View Video</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chevron-right text-indigo-600 mt-1 mr-2"></i>
+                            <div>
+                                <p class="font-semibold">Self-Tape Tutorial</p>
+                                <p class="text-sm text-gray-600">Professional guide to self-taping</p>
+                                <a href="https://www.youtube.com/watch?v=E7SXKxpUgxs" target="_blank" class="text-indigo-600 text-sm">View Video</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white no-print">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://cdn.simulationtheory.ai/gasset/?asset=img&prompt=theater%20director%20teaching%20acting%20class%20to%20students&w=600&h=400&style=professional" alt="Acting Instructor" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-4">About This Course</h2>
+                    <p class="mb-6 text-gray-700">This comprehensive acting curriculum is designed to give aspiring actors the foundational skills they need to pursue a career in the performing arts. Each lesson builds upon the previous one, creating a holistic approach to actor training.</p>
+                    
+                    <h3 class="text-xl font-bold mb-3">Course Objectives</h3>
+                    <ul class="list-disc pl-6 mb-6 text-gray-700">
+                        <li>Build a strong technical foundation in acting</li>
+                        <li>Develop effective memorization and preparation techniques</li>
+                        <li>Master physical and vocal characterization</li>
+                        <li>Learn professional audition skills</li>
+                        <li>Understand the business side of acting</li>
+                        <li>Create a personal career development plan</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mb-3">For Instructors</h3>
+                    <p class="text-gray-700">Assignments can be evaluated based on completion, attention to detail, and application of the principles taught in each lesson. The curriculum is designed to be flexible and can be adapted to different time frames and student experience levels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 no-print">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Acting Masterclass</h3>
+                    <p class="text-gray-400">A comprehensive curriculum for aspiring actors</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-indigo-400 transition-colors">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="hover:text-indigo-400 transition-colors">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2023 Acting Masterclass. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="text-gray-400 text-sm hover:text-white transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-indigo-700 no-print focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLessonsButton = document.getElementById('mobileLessonsButton');
+            const mobileLessonsMenu = document.getElementById('mobileLessonsMenu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            mobileLessonsButton.addEventListener('click', function() {
+                mobileLessonsMenu.classList.toggle('hidden');
+            });
+            
+            // Back to top button
+            const backToTopBtn = document.getElementById('backToTopBtn');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Print functionality
+            const printButtons = document.querySelectorAll('.print-btn');
+            
+            printButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lessonNumber = this.getAttribute('data-lesson');
+                    const lessonElement = document.getElementById('lesson' + lessonNumber);
+                    
+                    const printContent = lessonElement.cloneNode(true);
+                    const printWindow = window.open('', '', 'height=600,width=800');
+                    
+                    printWindow.document.write('<html><head><title>Lesson ' + lessonNumber + '</title>');
+                    printWindow.document.write('<style>body { font-family: Arial, sans-serif; margin: 20px; }');
+                    printWindow.document.write('.no-print { display: none; }');
+                    printWindow.document.write('.student-response { border: 1px dashed #94a3b8; padding: 10px; min-height: 150px; background-color: #f8fafc; }');
+                    printWindow.document.write('</style></head><body>');
+                    printWindow.document.write(printContent.outerHTML);
+                    printWindow.document.write('</body></html>');
+                    printWindow.document.close();
+                    
+                    setTimeout(() => {
+                        printWindow.print();
+                        printWindow.close();
+                    }, 250);
+                });
+            });
+            
+            document.getElementById('printAllBtn').addEventListener('click', function() {
+                window.print();
+            });
+            
+            // Save progress
+            const saveProgressBtn = document.getElementById('saveProgressBtn');
+            const studentResponses = document.querySelectorAll('.student-response');
+            
+            saveProgressBtn.addEventListener('click', function() {
+                const responseData = [];
+                
+                studentResponses.forEach(response => {
+                    responseData.push({
+                        lesson: response.getAttribute('data-lesson'),
+                        assignment: response.getAttribute('data-assignment'),
+                        content: response.innerHTML.trim(),
+                        timestamp: new Date().toISOString()
+                    });
+                });
+                
+                window.save_data_to_csv('acting_course_progress.csv', responseData);
+                
+                // Show confirmation message
+                const confirmationMsg = document.createElement('div');
+                confirmationMsg.className = 'fixed top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-md shadow-lg';
+                confirmationMsg.textContent = 'Progress saved successfully!';
+                document.body.appendChild(confirmationMsg);
+                
+                setTimeout(() => {
+                    confirmationMsg.remove();
+                }, 3000);
+            });
+            
+            // Handle smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+            
+            // Make student response areas editable
+            studentResponses.forEach(response => {
+                response.addEventListener('focus', function() {
+                    if (this.textContent.trim() === '[Type your Character Observation Report here]' ||
+                        this.textContent.trim() === '[Complete your Script Analysis Worksheet and reflection here]' ||
+                        this.textContent.trim() === '[Complete your Memorization Method Report here]' ||
+                        this.textContent.trim() === '[Include your video link and character descriptions here]' ||
+                        this.textContent.trim() === '[Include your warm-up routine description, audio link, and vocal choices explanation here]' ||
+                        this.textContent.trim() === '[Include your video link and Audition Preparation Sheet here]' ||
+                        this.textContent.trim() === '[Include your acting resume and Actor Marketing Plan here]' ||
+                        this.textContent.trim() === '[Create your Personal Acting Career Roadmap here]') {
+                        this.textContent = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
